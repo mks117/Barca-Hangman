@@ -1,0 +1,143 @@
+body {
+	background-color: black;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+#splash-screen {
+	height: 650px;
+	background-color: black;
+}
+
+/* splash screen */
+	#game-name {
+		text-align: center;
+		font-size: 60px;
+	}
+
+	#splash-image {
+		width:  50%;
+	    height: 50%;
+	    object-fit: cover;
+	    object-position: center;
+	}
+
+	#pakc {
+		text-align: center;
+	}
+/* End splash screen */
+
+/* main-menu */
+	#main-menu {
+		display: none;
+		background-color: black;
+		height: 650px;
+	}
+
+	#btn-start {
+		text-align: center;
+	}
+
+	#btn-about {
+		text-align: center;
+	}
+/* end main-menu */
+
+/* about screen */
+	#about-menu {
+		display: none;
+		height: 650px;
+	}
+
+	#developed-by {
+		text-align: center;
+	}
+
+	#btn-back {
+		text-align: center;
+	}
+/* end about screen */
+
+/* intro screen */
+	#intro-screen {
+		display: none;
+		text-align: center;
+	}
+
+	.intro-text {
+		font-size: 30px;
+	}
+
+	#intro-text-1 {
+		opacity: 0.0;
+	}
+
+	#intro-text-2 {
+		opacity: 0.0;
+	}
+
+	#intro-text-3 {
+		opacity: 0.0;
+	}
+/* intro screen */
+
+/* level */
+	#levels-screen {
+		display: none;
+		background-color: black;
+	}
+
+	#level-name {
+		text-align: center;
+	}
+
+	#level-image {
+		width:  50%;
+	    height: 50%;
+	    object-fit: cover;
+	    object-position: center;
+	}
+
+	#level-word {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#infantry-count {
+		font-family: "Times New Roman";
+	}
+
+	#cavalry-count {
+		font-family: "Times New Roman";
+	}
+
+	#elephantry-count {
+		font-family: "Times New Roman";
+	}
+
+	#guess-box {
+		background-color: #222222;
+	    object-fit: cover;
+	    object-position: center;
+	    height: 50px;
+	    width: 50px;
+	    font-size: 30px;
+	    text-align: center;
+	}
+
+	#submit-button {
+		margin-top: 10px;
+		background-color: #333333;
+	    object-fit: cover;
+	    object-position: center;
+	    font-size: 30px;
+	    text-align: center;
+	}
+/* end level */
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barca</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style type="text/css" media="screen, print">
+	    @font-face {
+	      font-family: "SPQR";
+	      src: url("assets/fonts/spqr.ttf");
+	    }
+	    
+	    body { 
+	    	font-family: "SPQR", serif;
+			color: lightgray;	
+		}
+  </style>
+  <script type="text/javascript" src="assets/js/game.js"></script>
+</head>
+
+<body>
+	<!-- splash screen -->
+	<div id="splash-screen" class="container" onclick="MainMenu()">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="game-name">BARCA</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<img id="splash-image" class="center-block" src="assets/images/barca.jpg" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="pakc">CLICK TO CONTINUE</h1>
+			</div>
+		</div>
+	</div>
+	<!-- end splash screen -->
+
+	<!-- main menu -->
+	<div id="main-menu" class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="game-name">BARCA</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<img id="splash-image" class="center-block" src="assets/images/barca.jpg" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<h1 id="btn-start" onclick="Intro()">START</h1>
+			</div>
+			<div class="col-xs-6">
+				<h1 id="btn-about" onclick="About()">ABOUT</h1>
+			</div>
+		</div>
+	</div>
+	<!-- end main menu -->
+
+	<!-- About -->
+	<div id="about-menu" class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="game-name">BARCA</h1>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="developed-by">A GAME DEVELOPED BY <br> MAX SCHMELLING</h1>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="btn-back" onclick="MainMenu()">BACK</h1>
+			</div>			
+		</div>
+	</div>
+	<!-- end about -->
+
+	<!-- intro -->
+	<div id="intro-screen" class="container">
+		<div class="row">
+			<div id="intro-text-1" class="col-xs-12">
+				<br><br>
+				<p class="intro-text">In the year CCXXI BC, after his brother Hasdrubal was assassinated, Hannibal Barca was put in command of the Carthaginian army.</p>
+			</div>
+			<div id="intro-text-2" class="col-xs-12">
+				<br><br>
+				<p class="intro-text">Honoring a promise he made to his father, to never be a friend to Rome, Hannibal besieged the city of Saguntum in the year CCXIX BC.</p>
+			</div>
+			<div id="intro-text-3" class="col-xs-12">
+				<br><br>
+				<p class="intro-text">Thus began the Second Punic War.</p>
+			</div>
+		</div>
+	</div>
+	<!-- end intro -->
+
+	<!-- levels -->
+	<div id="levels-screen" class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="level-name"></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<img id="level-image" class="center-block" src="assets/images/saguntum.jpg" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<br><br>
+				<p id="level-word"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<input id="guess-box" class="center-block" type="text" name="guess" maxlength="1">
+  				<input id="submit-button" class="center-block" onclick="guess()" type="submit" value="Submit">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<h1>GUESSES</h1>
+				<h1 id="letters-guessed"></h1>
+			</div>
+			<div class="col-xs-6">
+				<h1>ARMY</h1>
+				<h3>INFANTRY: <span id="infantry-count"></span></h3>
+				<h3>CAVALRY: <span id="cavalry-count"></span></h3>
+				<h3>ELEPHANTRY: <span id="elephantry-count"></span></h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
